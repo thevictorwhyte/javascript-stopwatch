@@ -30,10 +30,6 @@ body {
     justify-content: space-evenly;
 }
 
-.text-block {
-    display: block;
-}
-
 .text {
     text-align: center;
     display: inline-block;
