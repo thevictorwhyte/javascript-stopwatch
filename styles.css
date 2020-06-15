@@ -1,0 +1,73 @@
+/*
+FULL PAGE RESET
+Browsers usually apply default styles, so this is to ensure the default styles are removed
+*/
+*,
+*::after,
+*::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%; /* Neccessary for me to use REM instead of PX for size and dimensioning. Recommended approach */
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    color: #ebebeb;
+    background-color: #ff7b00;
+}
+
+/*MAIN STYLING*/
+.content {
+    height: 100vh; /*means 100% of the view port height, to ensure things stays responsive*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-block {
+    display: block;
+}
+
+.text {
+    text-align: center;
+    display: inline-block;
+    font-size: 6rem;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+
+.timer-block {
+    display: block;
+}
+
+.timer {
+    font-size: 6rem;
+    font-weight: 300;
+}
+
+.btns-block {
+    display: block;
+}
+
+.btn {
+    background-color: transparent;
+    width: 20rem;
+    font-size: 3rem;
+    font-family: inherit;
+    color: inherit;
+    padding: 1rem;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn:not(:last-child) {
+    margin-right: 2rem;
+}
